@@ -47,3 +47,18 @@ assim adicionamos ao nosso service o decorator @Injectable
 e no módulo principal onde iremos utilizar no array de providers devemos importar aquela classe. (Inspirado no Angular).
 
 Injeção de dependência é um padrão de projeto que auxilia a manter um baixo padrão de acoplamento entre classes. No nosso caso delegamos a responsabilidade de criar e fornecer um objeto para o framework.
+
+## Integração com o banco de dados
+
+1. Busca na documentação do NestJS o módulo Sequelize.
+
+2. Instalando o Sequelize
+  ```
+  npm install --save @nestjs/sequelize sequelize sequelize-typescript mysql2
+  npm install --save-dev @types/sequelize
+  ``` 
+3. Configurando o banco de dados src/app.module.ts
+
+4. Adequando o Model para o Sequelize src/produtos.model.ts
+
+5. Rodando o projeto, criando a tabela e os campos.
