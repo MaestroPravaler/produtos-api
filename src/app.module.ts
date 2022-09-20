@@ -5,14 +5,16 @@ import { AppService } from './app.service';
 import { ProdutosController } from './produtos.controler';
 import { ProdutosService } from './produtos.service';
 import { Produto } from './produtos.model';
+import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
+    ConfigModule.forRoot(),
     SequelizeModule.forRoot({
       dialect: 'mysql',
       host: 'localhost',
       port: 3306,
-      username: 'root',
+      username: process.env.USUARIO_DO_BANCO_DE_DADOS,
       password: '',
       database: 'produtos',
       autoLoadModels: true,

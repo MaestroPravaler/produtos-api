@@ -62,3 +62,22 @@ Injeção de dependência é um padrão de projeto que auxilia a manter um baixo
 4. Adequando o Model para o Sequelize src/produtos.model.ts
 
 5. Rodando o projeto, criando a tabela e os campos.
+
+## Alterando o Service e configuração final do projeto.
+
+1. Alterando o Service src/produtos.service.ts
+
+2. Configurando o Controller
+
+3. Inserindo dados no banco.
+
+4. Testes finais com um CRUD completo.
+
+5. Modificando as configurações do projeto (pacote vindo dotenv - nodejs)
+  ```
+  npm i --save @nestjs/config
+  ```
+- No arquivo src/app.module.ts colocar a configuração ConfigModule.forRoot()
+- Criar o arquivo .env na raiz do projeto
+
+
