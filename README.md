@@ -31,3 +31,19 @@ O Objetivo deste curso é desenvolver uma API simples com a utilização do fram
 2. Criando dados estáticos para nossos produtos
 
 3. Fazendo que nossos controllers consumam e retornem nossos produtos.
+
+## Services
+
+1. Criando o Service src/produtos.service.ts
+
+2. O Nest utiliza o conceito de providers (classes que podem ser injetadas dentro de outras),
+assim adicionamos ao nosso service o decorator @Injectable
+
+3. Refatorando o controller de produtos
+
+4. Inserido o ProdutosService no arquivo src/app.module.ts na opção provider.
+
+5. Injeção de Dependência : Coloca na classe que se pretende injetar o decorator @Injectable
+e no módulo principal onde iremos utilizar no array de providers devemos importar aquela classe. (Inspirado no Angular).
+
+Injeção de dependência é um padrão de projeto que auxilia a manter um baixo padrão de acoplamento entre classes. No nosso caso delegamos a responsabilidade de criar e fornecer um objeto para o framework.
