@@ -23,3 +23,11 @@ O Objetivo deste curso é desenvolver uma API simples com a utilização do fram
 5. Implementando os Métodos GET | POST | PUT | DELETE
 
 6. Testando as rotas api.http
+
+## Models
+
+1. Implementando os Models src/produtos.model.ts
+
+2. Criando dados estáticos para nossos produtos
+
+3. Fazendo que nossos controllers consumam e retornem nossos produtos.
