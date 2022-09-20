@@ -1,0 +1,44 @@
+# Página Principal
+GET http://localhost:3000 HTTP/1.1
+Content-Type: application/json
+###
+
+# Página de Produtos
+GET http://localhost:3000/produtos HTTP/1.1
+Content-Type: application/json
+###
+
+# Retorno de um produto
+GET http://localhost:3000/produtos/100 HTTP/1.1
+Content-Type: application/json
+###
+
+# Cria um produto
+POST http://localhost:3000/produtos HTTP/1.1
+Content-Type: application/json
+
+{
+    "id" : "100",
+    "Codigo" : "LIV100",
+    "nome" : "Livro de JavaScript",
+    "preco" : 22.90
+}
+###
+
+# Altera um produto
+PUT  http://localhost:3000/produtos HTTP/1.1
+Content-Type: application/json
+
+{
+    "id" : "100",
+    "Codigo" : "LIV100Alterado",
+    "nome" : "Livro de JavaScript",
+    "preco" : 22.90
+}
+###
+
+# Deleta um produto
+DELETE   http://localhost:3000/produtos/200 HTTP/1.1
+Content-Type: application/json
+
+###
